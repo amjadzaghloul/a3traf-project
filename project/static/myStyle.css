@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal:700');
+*{
+    font-family: 'Tajawal', sans-serif;
+        }
+#myDiv {
+    text-align: center;
+    color: #ff6b6b
+        }
+.mys{
+    background: #ff6b6b;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.2);
+        }
+.mys a{
+    color: white
+        }
+.mys a:hover{
+    color: black
+        }
+
+.cardUser{
+    width: 300px; 
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.card-title{
+    color: black;
+    font-size: 30px;
+}
+.cardPost{
+
+    margin: auto
+}
+
+#bodyDiv{
+    background: #dfe6e9;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 50px
+}
