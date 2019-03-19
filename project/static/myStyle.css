@@ -1,20 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Tajawal:700');
+@import url('https://fonts.googleapis.com/css?family=Changa:500');
 *{
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Changa', sans-serif;
         }
 #myDiv {
     text-align: center;
     color: #ff6b6b;
+    margin-bottom: 50px
         }
-.mys{
+.myNav{
     background: #ff6b6b;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.2);
         }
-.mys a{
+.myNav a{
     color: white
         }
-.mys a:hover{
+
+.cardHeader{
+    color: white;
+    background-color: #ff6b6b;
+    height: 50px
+        }
+
+.myNav a:hover{
     color: black
         }
 
@@ -22,6 +30,7 @@
     width: 300px; 
     margin: auto;
     margin-bottom: 35px;
+    box-shadow: 2px 2px 25px #888888;
 }
 
 .card-title{
@@ -31,6 +40,7 @@
 .cardPost{
 
     margin: auto;
+    box-shadow: 2px 2px 25px #888888;
 
 }
 
@@ -38,8 +48,11 @@
     background: white;
     border-radius: 10px;
     margin: 50px;
-    padding: 20px;
-    border: solid .2px
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 250px;
+    padding-right: 250px;
+    border: solid .2px;
 
 }
 #myUl{
@@ -67,7 +80,7 @@
     
 }
 #myBody{
-    background-color: #ecf0f1
+    background-color: #f1f2f6
 }
 
 .buNav {
@@ -75,10 +88,88 @@
     background-color: #ff6b6b !important;
 }
 
-@media screen and (max-width: 776px){
+#userCard{
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+    border: solid 2px #ff6b6b;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#userCard h4{
+    color: black
+}
+
+.cardImg{
+    height: 160px;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 2px #ff6b6b;
+    margin-top: -80px
+}
+
+@media screen and (max-width: 1100px){
+    
+    .myNav{
+    margin-bottom: 82px;
+        }
+    
     #bodyDiv{
     margin: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+    
+    #userCard{
+    margin: 10px;
+    }
+    
+
 }
+
+@media screen and (max-width: 776px){
+    
+    .myNav{
+    margin-bottom: 50px;
+        }
+    
+    #bodyDiv{
+    margin: 10px;
+    padding: 15px;
+    }
+    
+    #bodyDiv h5{
+        font-size: 20px;
+    }
+    
+    #userCard{
+        margin: 10px;
+        height: 120px;
+    }
+    .cardImg{
+    height: 80px;
+    margin-top: -40px;
+    }
+    #userCard h3{
+    font-size: 15px;
+    }
+    #userCard h4{
+    font-size: 15px;
+    }
+    #userCard a{
+    font-size: 15px;
+    }
+
+}
+
+
+
 .navbar-toggler{
     
 }
