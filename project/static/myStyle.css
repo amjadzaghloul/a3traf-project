@@ -4,7 +4,7 @@
         }
 #myDiv {
     text-align: center;
-    color: #ff6b6b
+    color: #ff6b6b;
         }
 .mys{
     background: #ff6b6b;
@@ -30,12 +30,55 @@
 }
 .cardPost{
 
-    margin: auto
+    margin: auto;
+
 }
 
 #bodyDiv{
-    background: #dfe6e9;
-    border-radius: 20px;
+    background: white;
+    border-radius: 10px;
     margin: 50px;
-    padding: 50px
+    padding: 20px;
+    border: solid .2px
+
+}
+#myUl{
+    text-align: right;
+    padding-right: 30px;
+    color: #ff6b6b;
+    
+
+    
+}
+.myLi{
+    display: inline;
+    text-align: left;
+    color: red
+}
+.ulText{
+}
+
+#myFooter {
+    height: 25px;
+    background-color: #dfe6e9;
+    width: 100%;
+    position:fixed;
+    bottom:0 ;
+    
+}
+#myBody{
+    background-color: #ecf0f1
+}
+
+.buNav {
+    border : solid 1px black !important;
+    background-color: #ff6b6b !important;
+}
+
+@media screen and (max-width: 776px){
+    #bodyDiv{
+    margin: 10px;
+}
+.navbar-toggler{
+    
 }

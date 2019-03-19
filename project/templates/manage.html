@@ -8,14 +8,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='myStyle.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>إعتراف</title>
   </head>
 
-  <body>
+  <body id="myBody">
     <nav class="navbar navbar-expand-lg mys ">
   <a class="navbar-brand order-md-last navbar-nav ml-auto" href="{{url_for('home')}}">إعتراف</a>  
-  <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-light bg-light buNav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon  "></span>
   </button>
 
@@ -47,6 +48,15 @@
         <h1>صفحة تعديل المعلومات </h1>
       {% endblock %}
     </div>
+    
+    <footer id="myFooter">
+    <ul id="myUl"> 
+        <li class="myLi"><a href="https://www.instagram.com/amjad_zaghloul/"><i class="fab fa-instagram"></i></a></li>
+        <li class="myLi"><a href="https://twitter.com/amjadzaghloul"><i class="fab fa-twitter"></i></a></li> 
+        <li class="myLi"><a href="https://www.facebook.com/amjad.zaghloul"><i class="fab fa-facebook-square"></i></a></li>
+        <span class="ulText">تابعنا على مواقع التواصل</span>
+    </ul>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -8,28 +8,35 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='myStyle.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>إعتراف</title>
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg mys " style="margin-bottom: 50px">
-  <a class="navbar-brand order-md-last navbar-nav ml-auto" href="{{url_for('home')}}">إعتراف</a>    
-  <button class="navbar-toggler navbar-light bg-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <body id="myBody">
+    <nav class="navbar navbar-expand-lg mys ">
+  <a class="navbar-brand order-md-last navbar-nav ml-auto" href="{{url_for('home')}}">إعتراف</a>  
+  <button class="navbar-toggler navbar-light bg-light buNav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon  "></span>
   </button>
 
-  <div class="collapse navbar-collapse navbar-nav ml-auto" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      
       <li class="nav-item">
-        <a class="nav-link" href="{{url_for('contact')}}"> أتصل بنا <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{url_for('contact')}}">أتصل بنا</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{url_for('about')}}">عن الموقع</a>
       </li>
-      <a class="nav-link" href="{{url_for('register')}}">تسجيل عضو جديد</a>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('register')}}">تسجيل عضو جديد</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="{{url_for('login')}}">تسجيل الدخول</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('home')}}"> <img src="{{ url_for('static', filename='home.png') }}" style="width: 25px"> </a>
       </li>
     </ul>
     
@@ -40,6 +47,15 @@
       {% block body %}
       {% endblock %}
     </div>
+      
+    <footer id="myFooter">
+    <ul id="myUl"> 
+        <li class="myLi"><a href="https://www.instagram.com/amjad_zaghloul/"><i class="fab fa-instagram"></i></a></li>
+        <li class="myLi"><a href="https://twitter.com/amjadzaghloul"><i class="fab fa-twitter"></i></a></li> 
+        <li class="myLi"><a href="https://www.facebook.com/amjad.zaghloul"><i class="fab fa-facebook-square"></i></a></li>
+        <span class="ulText">تابعنا على مواقع التواصل</span>
+    </ul>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
