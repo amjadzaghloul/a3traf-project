@@ -46,14 +46,46 @@
     <div id="myDiv">
 
       {% block body %}
-<div id="userCard">
-    <div class="userHead"></div>
-    <img class="cardImg" src="{{ url_for('static', filename='img/Dy7NqKQXQAERM22.jpg') }}">
-    <h3>أمجد زغلول</h3>
-    <h4> لديك 5 إعترافات</h4>
-    <a href="/messages">a3traf.com/amjadzaghloul</a>
-</div>
+
 <div id="bodyDiv">
+    <div class="userHead">
+    <a href="/messages">a3traf.com/amjadzaghloul</a>
+        <ul> 
+        <li><a href="https://www.instagram.com/amjad_zaghloul/"><img src="{{ url_for('static', filename='img/instagram.png') }}" style="width: 15px"></a></li>
+        <li><a href="https://twitter.com/amjadzaghloul"><img src="{{ url_for('static', filename='img/twitter.png') }}" style="width: 20px"></a></li> 
+        <li><a href="https://www.facebook.com/amjad.zaghloul"><img src="{{ url_for('static', filename='img/facebook.png') }}" style="width: 15px"></a></li>
+        <span>شارك رابط حسابك بين أصدقائك</span>
+    
+    </div>
+    <div id="userCard">
+        
+        <img class="cardImg" src="{{ url_for('static', filename='img/Dy7NqKQXQAERM22.jpg') }}">
+        <h3>Amjad Zaghloul</h3>
+        <div class="userCardPra">
+        <p>تلقيت 5 إعترافات وأرسلت 3 إعترافات</p>
+        </div>
+    </div>
+    <hr>
+    <div class="card cardPost">
+      <div class="card-header cardHeader">
+        <h4> Featured </h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary" style="background-color:#16a085; border-color: black ;">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card cardPost">
+      <div class="card-header cardHeader">
+        <h4> Featured </h4>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary" style="background-color:#16a085; border-color: black ;">Go somewhere</a>
+      </div>
+    </div>
     <div class="card cardPost">
       <div class="card-header cardHeader">
         <h4> Featured </h4>
@@ -70,9 +102,9 @@
       
     <footer id="myFooter">
     <ul id="myUl"> 
-        <li class="myLi"><a href="https://www.instagram.com/amjad_zaghloul/"><i class="fab fa-instagram"></i></a></li>
-        <li class="myLi"><a href="https://twitter.com/amjadzaghloul"><i class="fab fa-twitter"></i></a></li> 
-        <li class="myLi"><a href="https://www.facebook.com/amjad.zaghloul"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="myLi"><a href="https://www.instagram.com/amjad_zaghloul/"><img src="{{ url_for('static', filename='img/instagram.png') }}" style="width: 15px"></a></li>
+        <li class="myLi"><a href="https://twitter.com/amjadzaghloul"><img src="{{ url_for('static', filename='img/twitter.png') }}" style="width: 20px"></a></li> 
+        <li class="myLi"><a href="https://www.facebook.com/amjad.zaghloul"><img src="{{ url_for('static', filename='img/facebook.png') }}" style="width: 15px"></a></li>
         <span class="ulText">تابعنا على مواقع التواصل</span>
     </ul>
     </footer>
