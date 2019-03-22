@@ -49,20 +49,15 @@
 
 <div id="bodyDiv">
     <div class="userHead">
-    <a href="/messages">a3traf.com/amjadzaghloul</a>
-        <ul> 
-        <li><a href="https://www.instagram.com/amjad_zaghloul/"><img src="{{ url_for('static', filename='img/instagram.png') }}" style="width: 15px"></a></li>
-        <li><a href="https://twitter.com/amjadzaghloul"><img src="{{ url_for('static', filename='img/twitter.png') }}" style="width: 20px"></a></li> 
-        <li><a href="https://www.facebook.com/amjad.zaghloul"><img src="{{ url_for('static', filename='img/facebook.png') }}" style="width: 15px"></a></li>
-        <span>شارك رابط حسابك بين أصدقائك</span>
-    
     </div>
     <div id="userCard">
         
         <img class="cardImg" src="{{ url_for('static', filename='img/Dy7NqKQXQAERM22.jpg') }}">
         <h3>Amjad Zaghloul</h3>
-        <div class="userCardPra">
-        <p>تلقيت 5 إعترافات وأرسلت 3 إعترافات</p>
+        <div class="shareLink">
+    <a href="/messages" class="userLink">a3traf.com/amjadzaghloul</a>
+            <br>
+        <img src="{{ url_for('static', filename='img/share.png') }}" class="shareIcon">
         </div>
     </div>
     <hr>
@@ -102,9 +97,9 @@
       
     <footer id="myFooter">
     <ul id="myUl"> 
-        <li class="myLi"><a href="https://www.instagram.com/amjad_zaghloul/"><img src="{{ url_for('static', filename='img/instagram.png') }}" style="width: 15px"></a></li>
-        <li class="myLi"><a href="https://twitter.com/amjadzaghloul"><img src="{{ url_for('static', filename='img/twitter.png') }}" style="width: 20px"></a></li> 
-        <li class="myLi"><a href="https://www.facebook.com/amjad.zaghloul"><img src="{{ url_for('static', filename='img/facebook.png') }}" style="width: 15px"></a></li>
+        <li class="myLi"><a href="https://www.instagram.com/amjad_zaghloul/"><img src="{{ url_for('static', filename='img/instagram.png') }}" class="footerIcon"></a></li>
+        <li class="myLi"><a href="https://twitter.com/amjadzaghloul"><img src="{{ url_for('static', filename='img/twitter.png') }}" class="footerIcon"></a></li> 
+        <li class="myLi"><a href="https://www.facebook.com/amjad.zaghloul"><img src="{{ url_for('static', filename='img/facebook.png') }}" class="footerIcon"></a></li>
         <span class="ulText">تابعنا على مواقع التواصل</span>
     </ul>
     </footer>
