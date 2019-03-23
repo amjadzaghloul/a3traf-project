@@ -142,6 +142,24 @@ hr{
 .shareLink{
     font-size: 20px
 }
+.postImg{
+    width: 80px;
+    border-radius: 50%;
+    border: solid 2px #16a085;
+    margin-top: -60px;
+    box-shadow: 0 4px 4px -2px #888888;
+}
+
+.postUser{
+}
+.postUserText{
+    border: solid .5px #16a085;
+    border-radius: 3px
+}
+.card-body hr{
+    width: 100%;
+    height: .1px
+}
 
 @media screen and (max-width: 990px){
 
@@ -233,6 +251,22 @@ hr{
     .shareIcon{
     width: 60px;
     margin-top: -20px
+    }
+    .postUser{
+    font-size: 15px
+    }
+    .postUserText{
+    font-size: 12px
+    }
+    .cardHeader{
+    height: 35px
+    }
+    .postImg{
+    width: 60px;
+    margin-top: -70px;
+    }
+    .cardPost{
+    width: 90%
     }
 
 }
