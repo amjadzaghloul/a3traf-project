@@ -160,6 +160,11 @@ hr{
     width: 100%;
     height: .1px
 }
+.datePost{
+    font-size: 12px;
+    text-align: left;
+    color: black
+}
 
 @media screen and (max-width: 990px){
 
@@ -267,6 +272,9 @@ hr{
     }
     .cardPost{
     width: 90%
+    }
+    .datePost{
+    font-size: 8px;
     }
 
 }

@@ -8,6 +8,15 @@ from flask import (Flask ,
                    )
 app = Flask(__name__)
 
+from sqlalchemy import create_engine, asc
+from sqlalchemy.orm import sessionmaker
+from database_setup import Base, Post
+
+engine = create_engine('sqlite:///a3traf.db?check_same_thread=False')
+Base.metadata.bind = engine
+
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
 @app.route('/')
 @app.route('/home')
 def home():
@@ -31,7 +40,8 @@ def register():
 
 @app.route('/messages')
 def messages():
-    return render_template('messages.html')
+    messages = session.query(Post).all()
+    return render_template('messages.html', messages=messages)
 
 @app.route('/manage')
 def manage():

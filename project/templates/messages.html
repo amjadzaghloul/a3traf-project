@@ -61,6 +61,7 @@
         </div>
     </div>
     <hr>
+    {% for message in messages %}
     <div class="card cardPost">
       <div class="card-header cardHeader">
       </div>
@@ -68,33 +69,13 @@
       <div class="card-body">
           <img class="postImg" src="{{ url_for('static', filename='img/Dy7NqKQXQAERM22.jpg') }}">
         <h5 class="card-title postUser">Amjad Zaghloul</h5>
-        <p class="card-text postUserText">With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text postUserText">{{message.Message}}</p>
           <hr>
+          <p class="datePost">{{message.created_date}} بتاريخ</p>
       </div>
     </div>
     <hr>
-    <div class="card cardPost">
-      <div class="card-header cardHeader">
-      </div>
-        
-      <div class="card-body">
-          <img class="postImg" src="{{ url_for('static', filename='img/Dy7NqKQXQAERM22.jpg') }}">
-        <h5 class="card-title postUser">Amjad Zaghloul</h5>
-        <p class="card-text postUserText">With supporting text below as a natural lead-in to additional content.</p>
-          <hr>
-      </div>
-    </div>
-    <div class="card cardPost">
-      <div class="card-header cardHeader">
-      </div>
-        
-      <div class="card-body">
-          <img class="postImg" src="{{ url_for('static', filename='img/Dy7NqKQXQAERM22.jpg') }}">
-        <h5 class="card-title postUser">Amjad Zaghloul</h5>
-        <p class="card-text postUserText">With supporting text below as a natural lead-in to additional content.</p>
-          <hr>
-      </div>
-    </div>
+    {% endfor %}
 </div>       
       {% endblock %}
     </div>

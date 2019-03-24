@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from database_setup import Base, Post, User
+from database_setup import Base, Post
 
 engine = create_engine('sqlite:///a3traf.db')
 Base.metadata.bind = engine
@@ -10,14 +10,13 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 # Create dummy user
-user1 = User(name="Amjad Zaghloul", email="amjad.zaghloul@gmail.com",
-             picture='https://lh5.googleusercontent.com/-HF11rvXelt8/AAAAAAAAAAI/AAAAAAAACh4/UBgEkQ-4hQM/photo.jpg')
-session.add(user1)
+post1 = Post(sender_id= 1 , recipient_id= 2, Message='مرحباً أمجد كيف حالك')
+session.add(post1)
 session.commit()
 
-user2 = User(name="hanade Zaghloul", email="hanade.zaghloul@gmail.com",
-             picture='https://i.pinimg.com/originals/91/2d/0b/912d0b0d1ab486523121b28c324533a3.jpg')
-session.add(user2)
+post2 = Post(sender_id= 2 , recipient_id= 1, Message='مرحباً هنادي كيف حالك')
+session.add(post2)
 session.commit()
+
 
 print("done")
